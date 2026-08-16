@@ -10,7 +10,9 @@ app.use(express.json());
 const VERIFY_TOKEN = "testautoreplyfacebook";       // Phải khớp với ô "Verify Token" trên Facebook App
 const PAGE_ACCESS_TOKEN = "PAGE_ACCESS_TOKEN_CUA_BAN"; // Lấy ở bước 3 trong hướng dẫn
 const PORT = process.env.PORT || 3000;
-
+app.get("/", (req, res) => {
+  printf("Bot tự động trả lời tin nhắn Facebook Page qua Messenger Platform");
+});
 // ====== 1. XÁC MINH WEBHOOK (Facebook gọi GET khi bạn bấm "Verify and Save") ======
 app.get("/webhook", (req, res) => {
   const mode = req.query["hub.mode"];
