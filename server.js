@@ -8,10 +8,10 @@ app.use(express.json());
 
 // ====== CẤU HÌNH — thay bằng giá trị thật của bạn ======
 const VERIFY_TOKEN = "testautoreplyfacebook";       // Phải khớp với ô "Verify Token" trên Facebook App
-const PAGE_ACCESS_TOKEN = "https://testautoreply.onrender.com/webhook"; // Lấy ở bước 3 trong hướng dẫn
+const PAGE_ACCESS_TOKEN = "EAAYcdiQZCWmEBSH6y82ZCgV5vmoruxZCA6ZA6TQeOHu5L07rFJmyc6N0z28NwuW3ZCiPD5kpD51WupAqL7ZBDdMmoCx3T0lryonZCvGitF0sR2ueiE6st57Kp87bMop2iZAcSgcZB6QAN3ZA7rcRCUDVwXCQnAPjQUWXRBdSUZATbDTKl0cROM1X2R2GRhhZBKF9ZBIYmeTCE3vkyIuYPQELPZBJg2lOVj6zRuSss8H3SIcULhY9wYUXzE"; // Lấy ở bước 3 trong hướng dẫn
 const PORT = process.env.PORT || 3000;
 app.get("/", (req, res) => {
-  res.json("test autoreply facebook");
+  res.json("test");
 });
 // ====== 1. XÁC MINH WEBHOOK (Facebook gọi GET khi bạn bấm "Verify and Save") ======
 app.get("/webhook", (req, res) => {
