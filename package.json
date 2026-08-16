@@ -1,0 +1,15 @@
+{
+  "name": "fb-messenger-bot",
+  "version": "1.0.0",
+  "description": "Bot tự động trả lời tin nhắn Facebook Page qua Messenger Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
